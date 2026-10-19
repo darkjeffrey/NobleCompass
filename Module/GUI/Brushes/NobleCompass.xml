@@ -1,0 +1,43 @@
+<Brushes>
+  <!-- The compass button on the encyclopedia hero page, next to the bookmark star. -->
+  <Brush Name="NobleCompass.Encyclopedia.Button">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="SPGeneral\Nameplates\tracked_ring" Color="#FEC157FF" />
+    </Layers>
+    <Styles>
+      <Style Name="Default">
+        <BrushLayer Name="Default" AlphaFactor="0.6" />
+      </Style>
+      <Style Name="Hovered">
+        <BrushLayer Name="Default" AlphaFactor="1" />
+      </Style>
+      <Style Name="Pressed">
+        <BrushLayer Name="Default" AlphaFactor="0.5" />
+      </Style>
+      <Style Name="Selected">
+        <BrushLayer Name="Default" AlphaFactor="1" Color="#9BE38AFF" />
+      </Style>
+    </Styles>
+  </Brush>
+
+  <!-- The little arrow inside that button. -->
+  <Brush Name="NobleCompass.Encyclopedia.Button.Arrow">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="SPGeneral\SPScoreboard\arrow_up" Color="#FEC157FF" />
+    </Layers>
+    <Styles>
+      <Style Name="Default">
+        <BrushLayer Name="Default" AlphaFactor="0.6" />
+      </Style>
+      <Style Name="Hovered">
+        <BrushLayer Name="Default" AlphaFactor="1" />
+      </Style>
+      <Style Name="Pressed">
+        <BrushLayer Name="Default" AlphaFactor="0.5" />
+      </Style>
+      <Style Name="Selected">
+        <BrushLayer Name="Default" AlphaFactor="1" Color="#9BE38AFF" />
+      </Style>
+    </Styles>
+  </Brush>
+</Brushes>

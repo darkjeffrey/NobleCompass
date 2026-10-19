@@ -1,0 +1,23 @@
+<Prefab>
+  <Window>
+    <!-- Full-screen, click-through. NobleCompassMapView loads this on the map's nameplate layer. -->
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" DoNotAcceptEvents="true" IsVisible="@IsShown">
+      <Children>
+
+        <!-- An invisible circle centred on the party; the arrow is placed on its edge (NobleCompassWidget.cs). -->
+        <NobleCompassWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="@Diameter" SuggestedHeight="@Diameter" HorizontalAlignment="Left" VerticalAlignment="Top" DoNotAcceptEvents="true" CenterPosition="@CenterPosition" NeedleAngle="@NeedleAngle" NeedleColor="@ArrowColor" NeedleWidget="Needle">
+          <Children>
+
+            <!-- The arrow, circling the party. Moved and turned in code. -->
+            <Widget Id="Needle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="21" SuggestedHeight="27" HorizontalAlignment="Left" VerticalAlignment="Top" DoNotAcceptEvents="true" Sprite="SPGeneral\SPScoreboard\arrow_up" Color="#F2C97AFF" />
+
+            <!-- "Looking for ..." under the party -->
+            <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="320" HorizontalAlignment="Center" VerticalAlignment="Bottom" PositionYOffset="34" DoNotAcceptEvents="true" Brush="Map.Tracker.Name" Brush.FontSize="18" Brush.TextHorizontalAlignment="Center" Text="@LabelText" ClipContents="false" />
+
+          </Children>
+        </NobleCompassWidget>
+
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>
